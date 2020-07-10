@@ -1,7 +1,7 @@
 /*trump Gothic East Font*/
 @font-face {
     font-family: trumpGothic;
-    src: url(assets/trump_gothic_east_bold.ttf);
+    src: url(assets/fonts/trump_gothic_east_bold.ttf);
 }
 
 .gothic {
@@ -323,6 +323,7 @@
     /*    height: 100px;*/
     /*    max-height: 10px;*/
     background-attachment: fixed;
+    z-index: 1000;
     padding: 15px 0px 10px;
     /*    position: fixed;*/
 }
@@ -357,4 +358,35 @@
 
 .zoomcursor {
     cursor: zoom-in;
+}
+
+.hoverZoom{
+    transition: 0.7s;
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*     z-index: -1;*/
+}
+
+.hoverZoom:hover{
+    transform: scale(1.2);
+    z-index: 0;
+/*        transform: rotate(-20deg);*/
+
+}
+
+.hoverZoomDiv{
+    transition: 0.7s;
+}
+
+.hoverZoomDiv:hover{
+    transform: scale(1.08);
+}
+
+.hoverZoomDiv1{
+    transition: 0.7s;
+}
+
+.hoverZoomDiv1:hover{
+/*    transform: scale(1.08);*/
+    transform: rotate(-20deg);
 }

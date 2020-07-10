@@ -423,7 +423,7 @@
     .sec4img {
         transition: transform 0.4s;
         filter: brightness(100%);
-        transform: scale(1.15);
+/*        transform: scale(1.15);*/
     }
 
     .imgdiv {
