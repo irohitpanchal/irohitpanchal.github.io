@@ -8,6 +8,12 @@
     font-family: trumpGothic;
 }
 
+/*
+html {
+  scroll-behavior: smooth;
+}
+*/
+
 /* Center the loader */
 #loader {
   position: absolute;
