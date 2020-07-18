@@ -26,7 +26,7 @@ html {
 }
 
 #loader {
-/*    position: absolute;*/
+    /*    position: absolute;*/
     /*
   left: 50%;
   top: 50%;
@@ -42,7 +42,7 @@ html {
     /*  height: 120px;*/
     /*  -webkit-animation: spin 1s linear infinite;*/
     animation: blur 2s;
-/*        animation: heartbeat 0.8s;*/
+    /*        animation: heartbeat 0.8s;*/
     background-image: url(images/R%20red_.png);
     background-position: center;
     background-size: contain;
@@ -91,16 +91,16 @@ html {
     }
 }
 
-#heartbeat{
+#heartbeat {
     animation: scale 1.5s infinite;
     animation-delay: 2.5s;
-/*    animation-direction: reverse;*/
+    /*    animation-direction: reverse;*/
 }
 
 @keyframes scale {
     0% {
         transform: scale(1);
-/*        filter: blur(100px);*/
+        /*        filter: blur(100px);*/
     }
 
     10% {
@@ -117,8 +117,8 @@ html {
         /*                filter: blur(100px);*/
 
     }
-    
-    40%{
+
+    40% {
         transform: scale(1);
     }
 
@@ -132,39 +132,39 @@ html {
 }
 
 /* Add animation to "page content" */
-.animate-bottom {
+.animate-blur {
     position: relative;
-    -webkit-animation-name: animatebottom;
+    -webkit-animation-name: animateblur;
     -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
+    animation-name: animateblur;
     animation-duration: 1s
 }
 
-@-webkit-keyframes animatebottom {
+@-webkit-keyframes animateblur {
     from {
-/*        bottom: -100px;*/
+        /*        bottom: -100px;*/
         opacity: 1;
         filter: blur(100px);
     }
 
     to {
-/*        bottom: 0px;*/
+        /*        bottom: 0px;*/
         opacity: 1;
         filter: blur(0px);
     }
 }
 
-@keyframes animatebottom {
+@keyframes animateblur {
     from {
-/*        bottom: -100px;*/
+        /*        bottom: -100px;*/
         opacity: 1;
         filter: blur(100px);
 
-        
+
     }
 
     to {
-/*        bottom: 0;*/
+        /*        bottom: 0;*/
         opacity: 1;
         filter: blur(0px);
 
@@ -335,6 +335,8 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 4px;
+
     background: #B80000;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -359,6 +361,8 @@ html {
 .hvr-bounce-to-left:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+    border-radius: 4px;
+
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
