@@ -2,11 +2,11 @@
     var myVar;
 
     function myFunction() {
-        myVar = setTimeout(showPage, 1000);
+        myVar = setTimeout(showPage, 4000);
     }
 
     function showPage() {
-        document.getElementById("loader").style.display = "none";
+        document.getElementById("loadermain").style.display = "none";
         document.getElementById("myDiv").style.display = "block";
     }
 
@@ -44,7 +44,7 @@ $(document).ready(function () {
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function () {
+            }, 1000, function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
