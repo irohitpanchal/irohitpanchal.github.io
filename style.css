@@ -135,9 +135,9 @@ html {
 .animate-blur {
     position: relative;
     -webkit-animation-name: animateblur;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 1.2s;
     animation-name: animateblur;
-    animation-duration: 1s
+    animation-duration: 1.2s
 }
 
 @-webkit-keyframes animateblur {

@@ -1,0 +1,154 @@
+#loadermainA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 754px;
+    position: relative;
+}
+
+#loaderA {
+    /*    position: absolute;*/
+    /*
+  left: 50%;
+  top: 50%;
+*/
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    /*  margin: -75px 0 0 -75px;*/
+    /*  border: 16px solid #f3f3f3;*/
+    /*  border-radius: 100%;ss*/
+    /*  border-top: 16px solid red;*/
+    /*  width: 120px;*/
+    /*  height: 120px;*/
+    /*  -webkit-animation: spin 1s linear infinite;*/
+    animation: blur 2s;
+    /*        animation: heartbeat 0.8s;*/
+    background-image: url(images/A%20vector%20red.png);
+    background-position: center;
+    background-size: contain;
+    transform: scale(1.4);
+}
+
+/*
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+*/
+
+@keyframes blur {
+    0% {
+        transform: scale(1.4);
+        filter: blur(100px);
+    }
+
+    20% {
+        transform: scale(1.75);
+        /*        filter: blur(100px);*/
+    }
+
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(1.75);
+        /*                filter: blur(100px);*/
+
+    }
+
+    80% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+#heartbeatA {
+    animation: scale 1.5s infinite;
+    animation-delay: 2.5s;
+    /*    animation-direction: reverse;*/
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+        /*        filter: blur(100px);*/
+    }
+
+    10% {
+        transform: scale(1.1);
+        /*        filter: blur(100px);*/
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.1);
+        /*                filter: blur(100px);*/
+
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Add animation to "page content" */
+.animate-blur {
+    position: relative;
+    -webkit-animation-name: animateblur;
+    -webkit-animation-duration: 1s;
+    animation-name: animateblur;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animateblur {
+    from {
+        /*        bottom: -100px;*/
+        opacity: 1;
+        filter: blur(100px);
+    }
+
+    to {
+        /*        bottom: 0px;*/
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes animateblur {
+    from {
+        /*        bottom: -100px;*/
+        opacity: 1;
+        filter: blur(100px);
+
+
+    }
+
+    to {
+        /*        bottom: 0;*/
+        opacity: 1;
+        filter: blur(0px);
+
+    }
+}
