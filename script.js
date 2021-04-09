@@ -1,32 +1,31 @@
+var myVar;
 
-    var myVar;
+function myFunction() {
+    myVar = setTimeout(showPage, 5000);
+}
 
-    function myFunction() {
-        myVar = setTimeout(showPage, 5000);
-    }
-
-    function showPage() {
-        document.getElementById("loadermain").style.display = "none";
-        document.getElementById("myDiv").style.display = "block";
-    }
+function showPage() {
+    document.getElementById("loadermain").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+}
 
 
-    /* Open */
-    function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-    }
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
 
-    /* Close */
-    function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-    }
+/* Close */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
 
-    function smoothscroll() {
+function smoothscroll() {
 
-    }
+}
 
 $(document).ready(function () {
-    
+
 
 
     // Add smooth scrolling to all links
@@ -51,4 +50,16 @@ $(document).ready(function () {
             });
         } // End if
     });
+
+
+
+    //    rotating logo
+
+    var Rlogo = document.getElementById("Rlogo");
+
+    window.addEventListener("scroll", function () {
+        Rlogo.style.transform = "rotate(" + window.pageYOffset + "deg)";
+    });
+
+
 });
