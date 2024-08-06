@@ -22,18 +22,18 @@ const skillsLogos = {
       name: 'TypeScript',
       image: '/logos/ts-logo.png',
     },
-    {
-      name: 'Python',
-      image: '/logos/python-logo.png',
-    },
-    {
-      name: 'C#',
-      image: '/logos/csharp-logo.png',
-    },
-    {
-      name: 'Swift',
-      image: '/logos/swift-logo.png',
-    },
+    // {
+    //   name: 'Python',
+    //   image: '/logos/python-logo.png',
+    // },
+    // {
+    //   name: 'C#',
+    //   image: '/logos/csharp-logo.png',
+    // },
+    // {
+    //   name: 'Swift',
+    //   image: '/logos/swift-logo.png',
+    // },
     { name: '', image: '' },
     { name: '', image: '' },
     { name: '', image: '' },
@@ -62,10 +62,10 @@ const skillsLogos = {
       name: 'NextJS',
       image: '/logos/nextjs-logo.png',
     },
-    {
-      name: 'Native',
-      image: '/logos/rnative-logo.png',
-    },
+    // {
+    //   name: 'Native',
+    //   image: '/logos/rnative-logo.png',
+    // },
     {
       name: 'TailwindCSS',
       image: '/logos/tailwindcss-logo.jpg',
@@ -78,10 +78,10 @@ const skillsLogos = {
       name: 'JQuery',
       image: '/logos/jquery-logo.webp',
     },
-    {
-      name: 'Svelte',
-      image: '/logos/svelte-logo.png',
-    },
+    // {
+    //   name: 'Svelte',
+    //   image: '/logos/svelte-logo.png',
+    // },
     {
       name: 'Bootstrap',
       image: '/logos/bootstrap-logo.svg',
@@ -119,46 +119,46 @@ const skillsLogos = {
       name: 'PostgresSql',
       image: '/logos/postgres-logo.png',
     },
-    {
-      name: 'Firebase',
-      image: '/logos/firebase-logo.jpg',
-    },
-    {
-      name: 'Heroku',
-      image: '/logos/heroku-logo.webp',
-    },
-    {
-      name: 'DigitalOcean',
-      image: '/logos/digital-ocean-logo.svg',
-    },
-    {
-      name: 'Stripe',
-      image: '/logos/stripe-logo.png',
-    },
-    {
-      name: 'Paypal',
-      image: '/logos/paypal-logo.png',
-    },
-    {
-      name: 'MercadoPago',
-      image: '/logos/mercadopago-logo.webp',
-    },
-    {
-      name: 'awsS3',
-      image: '/logos/s3-logo.png',
-    },
-    {
-      name: 'StrapiCMS',
-      image: '/logos/strapi-cms-logo.png',
-    },
-    {
-      name: 'SanityCMS',
-      image: '/logos/sanity-cms-logo.png',
-    },
-    {
-      name: 'DatoCMS',
-      image: '/logos/dato-cms-logo.png',
-    },
+    // {
+    //   name: 'Firebase',
+    //   image: '/logos/firebase-logo.jpg',
+    // },
+    // {
+    //   name: 'Heroku',
+    //   image: '/logos/heroku-logo.webp',
+    // },
+    // {
+    //   name: 'DigitalOcean',
+    //   image: '/logos/digital-ocean-logo.svg',
+    // },
+    // {
+    //   name: 'Stripe',
+    //   image: '/logos/stripe-logo.png',
+    // },
+    // {
+    //   name: 'Paypal',
+    //   image: '/logos/paypal-logo.png',
+    // },
+    // {
+    //   name: 'MercadoPago',
+    //   image: '/logos/mercadopago-logo.webp',
+    // },
+    // {
+    //   name: 'awsS3',
+    //   image: '/logos/s3-logo.png',
+    // },
+    // {
+    //   name: 'StrapiCMS',
+    //   image: '/logos/strapi-cms-logo.png',
+    // },
+    // {
+    //   name: 'SanityCMS',
+    //   image: '/logos/sanity-cms-logo.png',
+    // },
+    // {
+    //   name: 'DatoCMS',
+    //   image: '/logos/dato-cms-logo.png',
+    // },
   ],
   ['Tools' as string]: [
     {
@@ -182,14 +182,14 @@ const skillsLogos = {
       name: 'Figma',
       image: '/logos/figma-logo.webp',
     },
-    {
-      name: 'SocketIO',
-      image: '/logos/socketio-logo.webp',
-    },
-    {
-      name: 'Mailchimp',
-      image: '/logos/mailchimp-logo.webp',
-    },
+    // {
+    //   name: 'SocketIO',
+    //   image: '/logos/socketio-logo.webp',
+    // },
+    // {
+    //   name: 'Mailchimp',
+    //   image: '/logos/mailchimp-logo.webp',
+    // },
     {
       name: 'Postmark',
       image: '/logos/postmark-logo.png',
@@ -231,10 +231,10 @@ export default function Skills() {
         <div className="skills-picker w-[325px] m-[10px] h-[325px] col-span-3 row-span-3 place-self-center isolate">
           <div className="rounded-full inset-6 absolute grid grid-cols-2 p-2 gap-2 rotate-45">
             {skills.map((skill) => (
-              <button onClick={handleChangeSkill} key={skill.skill} className={clsx('rounded-[500px] skills-buttons', skill.buttonClassNames, activeSkill === skill.skill && 'skills-buttons-active')}>
+              <button onMouseEnter={handleChangeSkill} key={skill.skill} className={clsx('rounded-[500px] skills-buttons', skill.buttonClassNames, activeSkill === skill.skill && 'skills-buttons-active')}>
                 <p className={clsx('text-3xl text-white font-semibold tracking-wide w-min -rotate-45', skill.textClassNames)}>
                   {skill.skill}
-                  <span className={clsx('transition-all duration-300 -z-10 bg-[#525df3] absolute bottom-0 left-0 right-0 w-full', activeSkill === skill.skill ? 'h-[18px]' : 'h-[2px]')}></span>
+                  {/* <span className={clsx('transition-all duration-300 -z-10 bg-[#525df3] absolute bottom-0 left-0 right-0 w-full', activeSkill === skill.skill ? 'h-[18px]' : 'h-[2px]')}></span> */}
                 </p>
               </button>
             ))}

@@ -1,9 +1,12 @@
 {
-  "name": "portfolio",
+  "homepage": "https://irohitpanchal.github.io",
+  "name": "rohit_panchal_portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "npm i ts-node -D && ts-node ./src/lib/generateLeetcodeMdx.ts && next build",
     "start": "next start",
     "lint": "next lint"
