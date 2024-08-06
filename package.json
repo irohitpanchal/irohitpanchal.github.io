@@ -1,7 +1,7 @@
 {
   "homepage": "https://irohitpanchal.github.io",
   "name": "rohit_panchal_portfolio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -59,6 +59,6 @@
   "devDependencies": {
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.2"
   }
 }
