@@ -29,7 +29,7 @@ export default function AboutMe() {
             <p className="mt-4 text-lg text-gray-500">After 2.5 years in this industry I have worked with multiple front-end and back-end technologies.</p>
           </div>
           <div className="flex-none mx-auto">
-            <Image className="rounded-full object-cover" src="/me.jpg" alt="" height={208} width={208} />
+            <Image className="rounded-full object-cover" src="./me.jpg" alt="" height={208} width={208} />
           </div>
         </div>
         <div className="@container">
@@ -64,7 +64,7 @@ export default function AboutMe() {
               <GlowCard className="hover:shadow-about_me_green/90" glowClassName="from-[#6bc072] to-[#6bc072]">
                 <div className="flex flex-col gap-8 @lg:flex-row justify-between">
                   <div className="flex-none mx-auto self-center">
-                    <Image className="rounded-2xl object-fill" src="/tec.jpeg" alt="" width={144} height={144} />
+                    <Image className="rounded-2xl object-fill" src="./tec.jpeg" alt="" width={144} height={144} />
                   </div>
                   <div className="max-w-xl flex-auto">
                     <h3 className="text-lg font-semibold leading-8 tracking-tight text-white">Bachelors of Computer Application</h3>
