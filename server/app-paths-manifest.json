@@ -5,8 +5,8 @@
   "/apps/leenith-borges/page": "app/apps/leenith-borges/page.js",
   "/apps/loteria-monarca/page": "app/apps/loteria-monarca/page.js",
   "/apps/impulseux/page": "app/apps/impulseux/page.js",
-  "/apps/sierra-ecomaderas/page": "app/apps/sierra-ecomaderas/page.js",
+  "/apps/realtor-simplified/page": "app/apps/realtor-simplified/page.js",
   "/apps/realtor-template-1/page": "app/apps/realtor-template-1/page.js",
-  "/leetcode/two-pointers/page": "app/leetcode/two-pointers/page.js",
-  "/apps/realtor-simplified/page": "app/apps/realtor-simplified/page.js"
+  "/apps/sierra-ecomaderas/page": "app/apps/sierra-ecomaderas/page.js",
+  "/leetcode/two-pointers/page": "app/leetcode/two-pointers/page.js"
 }
