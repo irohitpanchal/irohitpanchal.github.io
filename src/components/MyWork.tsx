@@ -15,13 +15,13 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    href: '/apps/realtor-simplified',
-    name: 'Tasks Flow',
-    full: true,
-    description: ' saas platform that enables realtors to deploy a professional website in minutes.',
-    image: { src: realtorSimplified },
-  },
+  // {
+  //   href: '/apps/realtor-simplified',
+  //   name: 'Tasks Flow',
+  //   full: true,
+  //   description: ' saas platform that enables realtors to deploy a professional website in minutes.',
+  //   image: { src: realtorSimplified },
+  // },
   // {
   //   href: '/apps/loteria-monarca',
   //   name: 'Loteria Monarca',

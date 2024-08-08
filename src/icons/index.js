@@ -21,6 +21,7 @@ import CollapseAll from './collapse-all';
 import ContactMe from './contact-me';
 import Debug from './debug';
 import Ellipsis from './ellipsis';
+import EmailIcon from './email'
 import Envelope from './envelope';
 import Eslint from './eslint';
 import Explorer from './explorer';
@@ -40,6 +41,8 @@ import Next from './next';
 import NextConfig from './next-config';
 import NodeModules from './node-modules';
 import NodeJs from './nodejs';
+
+import Phone from './phone';
 import Projects from './projects';
 import Public from './public';
 import PublicOpen from './public-open';
@@ -95,6 +98,7 @@ export {
   ContactMe,
   Debug,
   Ellipsis,
+  EmailIcon,
   Envelope,
   Eslint,
   Explorer,
@@ -113,6 +117,7 @@ export {
   Next,
   NextConfig,
   NodeJs,
+  Phone,
   NodeModules,
   Projects,
   Public,

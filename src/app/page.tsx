@@ -1,5 +1,5 @@
 import { AboutMe, AnimatedTitle, Border, ContactForm, Container, FadeIn, GridPattern, MyWork, Section, SectionHeader, Skills, Socials, Stars, WorkExperience } from '@/components';
-import { Archive, BookOpen, BriefCase, Envelope } from '@/icons';
+import { Archive, BookOpen, BriefCase, Envelope, Phone } from '@/icons';
 
 export const metadata = {
   title: 'Rohit Panchal Portfolio',
@@ -10,8 +10,8 @@ export const sections = [
   { index: 0, title: 'About Me', id: 'about-me' },
   { index: 1, title: 'Work Experience', id: 'work-experience' },
   { index: 2, title: 'Skills', id: 'skills' },
-  { index: 3, title: 'My Work', id: 'my-work' },
-  { index: 4, title: 'Contact Me', id: 'contact' },
+  // { index: 3, title: 'My Work', id: 'my-work' },
+  { index: 3, title: 'Contact Me', id: 'contact' },
 ];
 
 interface contentSection {
@@ -62,26 +62,26 @@ const content: contentSection[] = [
     },
     mainContent: <Skills />,
   },
+  // {
+  //   id: sections[3].id,
+  //   sectionHeader: {
+  //     icon: (
+  //       <>
+  //         <Archive height="28" width="28" />
+  //         <span className="bg-my_work_yellow icon-blur absolute inset-0 -z-10"></span>
+  //       </>
+  //     ),
+  //     title: 'My Work',
+  //     description: (
+  //       <div>
+  //         Some of <span className="text-my_work_yellow">my work</span> as a full stack <span className="text-my_work_yellow">web</span> developer
+  //       </div>
+  //     ),
+  //   },
+  //   mainContent: <MyWork />,
+  // },
   {
     id: sections[3].id,
-    sectionHeader: {
-      icon: (
-        <>
-          <Archive height="28" width="28" />
-          <span className="bg-my_work_yellow icon-blur absolute inset-0 -z-10"></span>
-        </>
-      ),
-      title: 'My Work',
-      description: (
-        <div>
-          Some of <span className="text-my_work_yellow">my work</span> as a full stack <span className="text-my_work_yellow">web</span> developer
-        </div>
-      ),
-    },
-    mainContent: <MyWork />,
-  },
-  {
-    id: sections[4].id,
     sectionHeader: {
       icon: (
         <>
@@ -91,9 +91,13 @@ const content: contentSection[] = [
       ),
       title: 'Contact Me',
       description: (
-        <div>
-          Get in <span className="text-blue-400">contact</span> and let&apos;s <span className="text-blue-400">work together</span>
-        </div>
+        <>
+          <div>
+            Get in <span className="text-blue-400">contact</span> and let&apos;s <span className="text-blue-400">work together</span>
+          </div>
+          <div className='mt-5' style={{fontSize: "large", display:"flex", alignItems: "center"}}><Envelope className='mr-2' height="25" width="25" />rohit.panchal.737@gmail.com</div>
+          <div className='mt-1' style={{fontSize: "large", display:"flex", alignItems: "center"}}><Phone className='mr-2' height="25" width="25" />+91 7876 123 777</div>
+        </>
       ),
     },
     mainContent: <ContactForm />,
@@ -120,7 +124,7 @@ export default function Index() {
                 / &#8205; <AnimatedTitle />
               </div>
               <p className="max-w-3xl">You have the vision for a stunning digital experience.
-              I am the designer who can bring it to life.</p>
+                I am the designer who can bring it to life.</p>
             </FadeIn>
 
             <Socials />
@@ -142,6 +146,7 @@ export default function Index() {
             <Section key={section.id} id={section.id} className="pt-24 mt-28">
               <Border />
               <SectionHeader {...section.sectionHeader} />
+
               {section.mainContent}
             </Section>
           ))}

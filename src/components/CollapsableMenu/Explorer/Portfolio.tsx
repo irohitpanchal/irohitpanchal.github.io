@@ -111,7 +111,7 @@ export default function Portfolio({ allApps, allLeetcode }: { allApps: MDXEntry<
           <Folder name="public" openIcon={<PublicOpen />} closedIcon={<Public />} indent={0} segmentActive={segments.length === 0}>
             <File name="about_me.ts" icon={<FavIcon />} url="/" indent={1} sections={pathname === '/' ? sections : []} />
           </Folder>
-          <Folder name="src" openIcon={<SrcOpen />} closedIcon={<Src />} indent={0} segmentActive={false}>
+          {/* <Folder name="src" openIcon={<SrcOpen />} closedIcon={<Src />} indent={0} segmentActive={false}>
             <Folder name="my work" openIcon={<AppOpen />} closedIcon={<App />} indent={1} segmentActive={segments[0] === 'apps'}>
               {allApps.map((app) => (
                 <File key={app.pathname} name={app.title} icon={fileType[app.framework]} url={app.pathname} indent={2} sections={pathname === app.pathname ? sections : []} />
@@ -122,7 +122,7 @@ export default function Portfolio({ allApps, allLeetcode }: { allApps: MDXEntry<
                 <File key={leetcode.pathname} name={leetcode.title} icon={fileType[leetcode.framework]} url={leetcode.pathname} indent={2} sections={pathname === leetcode.pathname ? sections : []} />
               ))}
             </Folder>
-          </Folder>
+          </Folder> */}
           {staticFiles.map((file) => (
             <File key={file.name} name={file.name} icon={file.icon} indent={0} sections={[]} />
           ))}
