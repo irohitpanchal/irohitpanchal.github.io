@@ -285,7 +285,7 @@ module.exports = require("zlib");
 
 /***/ }),
 
-/***/ 12349:
+/***/ 81387:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -324,7 +324,7 @@ const tree = {
         'loteria-monarca',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 81822)), "O:\\Portfolio\\Rohit's Portfolio\\irohitpanchal.github.io\\src\\app\\apps\\loteria-monarca\\page.mdx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 81822)), "/home/groot/Desktop/Cylinder Details Application/MyPort2/irohitpanchal.github.io/src/app/apps/loteria-monarca/page.mdx"],
           
         }]
       },
@@ -347,7 +347,7 @@ const tree = {
       ]
       },
         {
-        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 49037)), "O:\\Portfolio\\Rohit's Portfolio\\irohitpanchal.github.io\\src\\app\\layout.tsx"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 49037)), "/home/groot/Desktop/Cylinder Details Application/MyPort2/irohitpanchal.github.io/src/app/layout.tsx"],
 'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 95493, 23)), "next/dist/client/components/not-found-error"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9873))).default(props))],
@@ -359,7 +359,7 @@ const tree = {
       }
       ]
       }.children;
-const pages = ["O:\\Portfolio\\Rohit's Portfolio\\irohitpanchal.github.io\\src\\app\\apps\\loteria-monarca\\page.mdx"];
+const pages = ["/home/groot/Desktop/Cylinder Details Application/MyPort2/irohitpanchal.github.io/src/app/apps/loteria-monarca/page.mdx"];
 
 // @ts-expect-error - replaced by webpack/turbopack loader
 
@@ -398,7 +398,7 @@ const routeModule = new AppPageRouteModule({
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,493,915,267,57,390,827,822], () => (__webpack_exec__(12349)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,493,915,267,57,692,288,822], () => (__webpack_exec__(81387)));
 module.exports = __webpack_exports__;
 
 })();
