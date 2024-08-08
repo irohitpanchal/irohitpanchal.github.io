@@ -1,15 +1,15 @@
 import nextMDX from '@next/mdx';
 
-import { recmaPlugins } from './src/mdx/recma.mjs';
-import { rehypePlugins } from './src/mdx/rehype.mjs';
-import { remarkPlugins } from './src/mdx/remark.mjs';
+// import { recmaPlugins } from './src/mdx/recma.mjs';
+// import { rehypePlugins } from './src/mdx/rehype.mjs';
+// import { remarkPlugins } from './src/mdx/remark.mjs';
 
 const withMDX = nextMDX({
-  options: {
-    remarkPlugins,
-    rehypePlugins,
-    recmaPlugins,
-  },
+  // options: {
+  //   remarkPlugins,
+  //   rehypePlugins,
+  //   recmaPlugins,
+  // },
 });
 
 /** @type {import('next').NextConfig} */
