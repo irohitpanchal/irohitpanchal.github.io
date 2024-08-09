@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "predeploy": "npm run build && mv build docs",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d out",
     "build": "npm i ts-node -D && ts-node ./src/lib/generateLeetcodeMdx.ts && next build",
     "start": "next start",
