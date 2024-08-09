@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "predeploy": "npm run build && mv build docs",
-    "deploy": "gh-pages -d .next",
+    "deploy": "gh-pages -d out",
     "build": "npm i ts-node -D && ts-node ./src/lib/generateLeetcodeMdx.ts && next build && move out\\* docs",
     "start": "next start",
     "lint": "next lint"
