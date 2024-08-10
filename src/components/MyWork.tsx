@@ -2,7 +2,7 @@
 import { ExpandArrowLink, GlowCard } from '@/components';
 import clsx from 'clsx';
 import Image, { StaticImageData } from 'next/image';
-import { impulseux, leenithBorges, leenithIos, loteriaMonarca, realtorSimplified, sierraEcomaderas, template1 } from '../../public/projects/';
+import { impulseux, leenithBorges, leenithIos, loteriaMonarca, realtorSimplified, sierraEcomaderas, template1, doctorsAppointmentCalender } from '../../public/projects/';
 
 interface Project {
   href: string;
@@ -15,13 +15,13 @@ interface Project {
 }
 
 const projects: Project[] = [
-  // {
-  //   href: '/apps/realtor-simplified',
-  //   name: 'Tasks Flow',
-  //   full: true,
-  //   description: ' saas platform that enables realtors to deploy a professional website in minutes.',
-  //   image: { src: realtorSimplified },
-  // },
+  {
+    href: '/apps/realtor-simplified',
+    name: "Doctor's Dashboard",
+    full: true,
+    description: ' saas platform that enables realtors to deploy a professional website in minutes.',
+    image: { src: doctorsAppointmentCalender },
+  },
   // {
   //   href: '/apps/loteria-monarca',
   //   name: 'Loteria Monarca',
@@ -81,7 +81,7 @@ export default function MyWork() {
                 <span className="text-2xl @2xl:text-4xl text-my_work_yellow">{project.name}</span>
                 {project.description}
               </h3>
-              <ExpandArrowLink href={project.href} className="before:bg-my_work_yellow " />
+              {/* <ExpandArrowLink href={project.href} className="before:bg-my_work_yellow " /> */}
             </div>
             <Image
               placeholder="blur"

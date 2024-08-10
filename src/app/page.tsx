@@ -10,8 +10,8 @@ export const sections = [
   { index: 0, title: 'About Me', id: 'about-me' },
   { index: 1, title: 'Work Experience', id: 'work-experience' },
   { index: 2, title: 'Skills', id: 'skills' },
-  // { index: 3, title: 'My Work', id: 'my-work' },
-  { index: 3, title: 'Contact Me', id: 'contact' },
+  { index: 3, title: 'My Work', id: 'my-work' },
+  { index: 4, title: 'Contact Me', id: 'contact' },
 ];
 
 interface contentSection {
@@ -62,26 +62,26 @@ const content: contentSection[] = [
     },
     mainContent: <Skills />,
   },
-  // {
-  //   id: sections[3].id,
-  //   sectionHeader: {
-  //     icon: (
-  //       <>
-  //         <Archive height="28" width="28" />
-  //         <span className="bg-my_work_yellow icon-blur absolute inset-0 -z-10"></span>
-  //       </>
-  //     ),
-  //     title: 'My Work',
-  //     description: (
-  //       <div>
-  //         Some of <span className="text-my_work_yellow">my work</span> as a full stack <span className="text-my_work_yellow">web</span> developer
-  //       </div>
-  //     ),
-  //   },
-  //   mainContent: <MyWork />,
-  // },
   {
     id: sections[3].id,
+    sectionHeader: {
+      icon: (
+        <>
+          <Archive height="28" width="28" />
+          <span className="bg-my_work_yellow icon-blur absolute inset-0 -z-10"></span>
+        </>
+      ),
+      title: 'My Work',
+      description: (
+        <div>
+          Some of <span className="text-my_work_yellow">my work</span> as a full stack <span className="text-my_work_yellow">web</span> developer
+        </div>
+      ),
+    },
+    mainContent: <MyWork />,
+  },
+  {
+    id: sections[4].id,
     sectionHeader: {
       icon: (
         <>
